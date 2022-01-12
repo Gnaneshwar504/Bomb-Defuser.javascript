@@ -1,0 +1,125 @@
+Fetch & Callbacks > Event Listeners and More Events | Cheat Sheet
+Event Listeners and More Events | Cheat Sheet
+1. Event Listeners
+JavaScript offers three ways to add an Event Listener to a DOM element.
+
+Inline event listeners
+onevent listeners
+addEventListener()
+1.1 Inline event listeners
+HTML
+JAVASCRIPT
+1.2 onevent listeners
+HTML
+JAVASCRIPT
+1.3 addEventListener()
+It is a modern approach to add an event listener.
+
+Syntax: element.addEventListener(event, function);
+
+element - HTML element
+event - event name
+function - Callback function
+
+HTML
+JAVASCRIPT
+
+2. Operators
+2.1 Comparison Operators
+Operator	Usage	Description
+Equal ( == )	a == b	returns true if both a and b values are equal.
+Not equal ( != )	a != b	returns true if both a and b values are not equal.
+Strict equal ( === )	a === b	returns true if both a and b values are equal and of the same type.
+Strict not equal ( !== )	a !== b	returns true if either a and b values are not equal or of the different type.
+Greater than ( > )	a > b	returns true if a value is greater than b value.
+Greater than or equal ( >= )	a >= b	returns true if a value is greater than or equal to b value.
+Less than ( < )	a < b	returns true if a value is less than b value.
+Less than or equal ( <= )	a <= b	returns true if a value is less than or equal to b value.
+2.2 Logical Operators
+Operator	Usage	Description
+AND ( && )	a && b	returns true if both a and b values are true.
+OR ( | | )	a | | b	returns true if either a or b value is true.
+NOT ( ! )	!a	returns true if a value is not true.
+
+3. More Events
+Events are the actions by which the user or browser interact with HTML elements.
+
+There are different types of events.
+
+Keyboard Events
+Mouse Events
+Touch Events, and many more.
+3.1 Keyboard Events
+Keyboard Event is the user interaction with the keyboard.
+
+The keyboard events are
+
+keydown
+keyup
+3.1.1 Keydown event
+The keydown event occurs when a key on the keyboard is pressed.
+
+Syntax: element.addEventListener("keydown", function);
+
+JAVASCRIPT
+3.1.2 Keyup event
+The keyup event occurs when a key on the keyboard is released.
+
+Syntax: element.addEventListener("keyup", function);
+
+3.2 Event Object
+Whenever an event happens, the browser creates an event object.
+
+It consists of information about the event that has happened.
+
+It consists of many properties and methods.
+
+type
+target
+key
+timeStamp
+stopPropagation, and many more.
+3.2.1 Properties & Methods
+For any event, event-specific properties and methods will be present.
+
+For Example,
+
+The keydown event has key property, whereas the onclick event doesn't have it.
+
+event.type
+The event.type property contains the type of event occurred like click, keydown, etc.
+
+JAVASCRIPT
+event.target
+The event.target property contains the HTML element that triggered the event.
+
+JAVASCRIPT
+event.key
+The event.key property contains the value of the key pressed by the user.
+
+JAVASCRIPT
+Keyboard key	event.key value
+Enter	Enter
+a	a
+A	A
+1	1
+*	*
+<	<
+Try out the keyboard events and the event object in the below Code Playground.
+
+HTML
+CSS
+JAVASCRIPT
+Inspect
+  
+
+Submit Feedback
+
+MARKED AS COMPLETE
+Notes
+
+Discussions
+
+Notes
+ NEW NOTE
+
